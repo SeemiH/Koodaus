@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8" />
+        <title>SeeminWebsite</title>
+</head>
+<body>
+<img src="http://puheenvuoro.uusisuomi.fi/sites/default/files/imagecache/content-img-thumb/domain-15868/kuvat/Earth.jpg" height="80" width="800">
+    <h1 style="border-color: whitesmoke">
+    Minusta tai Helsingistä</h1>
+    <p>
+    tähän tulee tieto minusta tai Helsingistä</p>
+    <a href="https://validator.w3.org/" target="_blank">Validator</a> <script>function repaint(event) { var x = event.clientX;
+  var y = event.clientY;
+  var img = new Image(500,65);
+  img.src = "http://www.haaga-helia.fi/sites/all/themes/haagahelia/images/logo.png";
+  var canvas = document.getElementById("mycanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.rotate(Math.atan2(y,x));
+  ctx.drawImage(img,0,0);
+}
+
+document.body.onload = function () {
+  var canvas = document.createElement("canvas");
+  canvas.id = "mycanvas";
+  canvas.width = 600;
+  canvas.height = 600;
+  canvas.textContent = "Please, update your browser.";
+  document.body.appendChild(canvas);
+  document.body.onmousemove = repaint;
+};</script>
+    <img src="image1.gif">
+    <pre>
+
+
+
+
+    </pre>
+    <img src="Earth.jpg" alt="Earth">
+
+    </body>
+</html>

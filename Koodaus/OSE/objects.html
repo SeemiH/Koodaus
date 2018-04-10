@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Seemi">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>kaksi henkilöä</title>
+</head>
+<body>
+  <h1>Kaksi oliota</h1>
+  <p>
+    katso console
+  </p>
+<script>
+var person1 = {
+  etunimi : "niilo",
+  sukunimi : "niilonen",
+  age : 16,
+  color : "musta",
+  kokonimi : function (){
+    return this.etunimi + "" + this.sukunimi;
+  }
+}
+var person2 = {
+  etunimi : "teme",
+  sukunimi : "kawaii",
+  age : 14,
+  lempivari : "pinkki"
+}
+console.log(person1);
+console.log(person1.etunimi);
+
+person1.etunimi = "nikke";
+person1.lempielain = "kampela";
+console.log(person1);
+console.log(person2);
+
+var persons=[];
+persons.push(person1);
+persons.push(person2);
+console.log(persons);
+console.log("kokonimi"+person1.kokonimi());
+var arrperson;
+for (var i = 0; i<persons.length; i++){
+  arrperson=persons[i];
+  console.log("henklilön etunimi: "+ arrperson.etunimi);
+}
+</script>
+</body>
+</html>

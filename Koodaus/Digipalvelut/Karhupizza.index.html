@@ -1,0 +1,174 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <title>Karhu Pizza</title>
+ <meta charset="UTF-8">
+ <meta name="author" content="Seemi">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="handheldFriendly" content="True">
+ <meta name="MobileOptimized" content="320">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link href="CSS/tyyli.css" rel="stylesheet" type="text/css">
+ <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
+<script src="JS/karhupizza.js"> </script>
+<script src="JS/bootstrap.js"> </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+ ul {list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow:hidden;
+   display: inline-block;
+   white-space: nowrap;
+   }
+ li {float: left; display: inline-block;
+ }
+ li button{display: inline-block;
+     padding: 8px;
+     background-color: rgba(255, 255, 255, 0.7); color: rgb(5, 133, 22); text-shadow:
+     -1px -1px 0 #000,
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+     1px 1px 0 #000;  font-family: 'Indie Flower',cursive; font-size: 150%;
+     border:solid 2px;
+     border-color: red;
+   }
+ li button:hover:not(.active) {
+   background-color: rgb(219, 60, 44);
+ }
+ .active {
+   background-color: rgb(219, 60, 44);
+ }
+/* .container {width: 100%; height: 100%}*/
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+ </style>
+ <script>
+ $(document).ready(function(){
+   $(".dropdown-toggle").dropdown("toggle");
+ });
+ </script>
+ <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+</head>
+ <body>
+   <br>
+ <h1> Karhu Pizza </h1>
+<br>
+<div class="navbar">
+  <a href="#">Etusivu</a>
+  <a href="#">Meistä</a>
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Menu
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Kebabit</a>
+      <a href="#">Pizzat</a>
+    </div>
+    <a href="#">Yhteystiedot</a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+ <p id="para1">Karhu pizzasta stadin laadukkaimmat lätyt!
+Italialaista pizzaa ja turkkilaista kebabia suomalaisella rakkaudella!
+</p>
+<br>
+ <div class="container" id="div2">
+   <div class="row"></div>
+     <div class="col"></div>
+  <img id="img1" src="http://bit.ly/2nrtUzK" alt="">
+  <div class="top-left">Uutuutena METRIPIZZA!</div>
+  <div class="bottom-right">Paikanpäällä vain 28€!</div>
+</div>
+<br>
+  <footer>
+    <pre class="footertext">Puh. 123 456 789   email:karhu@pizza.fi <br> Pasilanraide 25 (Yhteystiedot sivulta löydät kartan)</pre>
+  </footer>
+  <div id="iframe">
+      <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FKarhu-Pizza-105868190220515%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80"></iframe>
+    </div>
+</body>
+</html>

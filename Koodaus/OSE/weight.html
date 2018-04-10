@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Weightloss</title>
+	<h1><strong>Weightloss for 7 weeks<strong><h1>
+	<script type="text/javascript">
+		alert("Enter your original Weight");
+
+		function showWeightGoals() {
+			var w = document.getElementById("weight").value;
+			var goal = w * 0.1/7;
+			var output="";
+
+			for (var loopcounter = 1; loopcounter<=7; loopcounter++)
+			{var w = w - goal;
+			 w = Math.round(w * 10) / 10;
+				output += "After " + loopcounter + " week " + w
++ "<br />"
+}
+			document.write (output);
+
+}
+	</script>
+</head>
+
+<body>
+	<h3>Weight</h3>
+
+	<form>
+		<p>
+			<label>Original weight: </label> <input type="text" name="weight" id="weight" size="3"> <input type="button" value="Show weight goals" onClick="showWeightGoals()">
+		</p>
+	</form>
+
+	<!-- This is the target where the JavaScript will write the answer -->
+	<div id="answer"></div>
+</body>
+
+</html>

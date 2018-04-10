@@ -1,0 +1,17 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: brown;
+    margin-left: 23px;
+}
+p {
+    color: limegreen; font-size: 20px;
+}
+a {
+    font-family: monospace; font-size: 30px; font-feature-settings: normal; color: cadetblue; background-color: yellow; background-blend-mode: color-burn; background-blend-mode: darken;
+}
+a:visited
+{color: darkgoldenrod;}
+a:hover {color: aqua;}
+img "image1.gif" {padding: 100px 10px 10px 100px}
